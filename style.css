@@ -6,3 +6,61 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+form {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 300px;
+    width: 150px;
+    background-color: black;
+}
+
+.result-color {
+    border: none;
+    background-color: transparent;
+    text-align: end;
+    color:#fff;
+    margin-right: 30px;
+}
+
+.textcolor {
+    border: none;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+}
+
+.opcolor {
+    border: none;
+    border-radius: 50px;
+    background-color:orange;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.numcolor {
+    border: none;
+    border-radius: 50px;
+    background-color: #333;
+    color:#fff;
+    width: 30px;
+    height: 30px;
+}
+
+
+.btnzero {
+    border: none;
+    border-radius: 50px;
+    background-color: #333;
+    color:#fff;
+    width: 70px;
+    padding-right: 35px;
+    height: 30px;
+}
