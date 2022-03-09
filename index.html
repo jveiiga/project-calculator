@@ -8,47 +8,36 @@
     <link rel="" href="script.js" />
     <title>Calculadora IPhone</title>
   </head>
-  <body onload="loading();">
-    <div>
-      <form action="" id="from" name="Calculator" class="box">
-        <input type="text" class="result-color" name="text1" id="initialValue" disabled><br />
+  <body>
+    <div class="calculadora">
+        <input class="result-color" type="text" name="tela" id="display-da-tela" disabled><br />
         <div>
-            <input type="button" class="textcolor" name="text12" value="AC" onClick="location.reload()"/>
-            <input type="button" class="textcolor" name="" value="+/-" onClick="displaynum(div.value)">
-            <input type="button" class="textcolor" name="" value="%" onClick="displaynum(div.value)">
-            <input type="button" class="opcolor" name="divbtn" value="/" onClick="displaynum(divbtn.value)"><br />
-        </div>
+            <button class="textcolor" onClick="botao_AC()">AC</button>  
+            <button class="textcolor" onClick="adicionar_parametro('+/-')">+/-</button>  
+            <button class="textcolor" onClick="porcentagem()">%</button>  
+            <button class="opcolor" onClick="adicionar_parametro('/')">/</button><br />
+       
 
-        <div>
-            <input type="button" class="numcolor" name="btn7" value="7" onClick="displaynum(btn7.value)">
-            <input type="button" class="numcolor" name="btn8" value="8" onClick="displaynum(btn8.value)">
-            <input type="button" class="numcolor" name="btn9" value="9" onClick="displaynum(btn9.value)">
-            <input type="button" class="opcolor" name="mulbtn" value="*" onClick="displaynum(mulbtn.value)"><br />
-        </div>
+            <button class="numcolor" onClick="adicionar_parametro(7)">7</button>  
+            <button class="numcolor" onClick="adicionar_parametro(8)">8</button>  
+            <button class="numcolor" onClick="adicionar_parametro(9)">9</button>  
+            <button class="opcolor" onClick="adicionar_parametro('*')">*</button><br />  
 
-        <div>
-            <input type="button" class="numcolor" name="btn4" value="4" onClick="displaynum(btn4.value)">
-            <input type="button" class="numcolor" name="btn5" value="5" onClick="displaynum(btn5.value)">
-            <input type="button" class="numcolor" name="btn6" value="6" onClick="displaynum(btn6.value)">
-            <input type="button" class="opcolor" name="subbtn" value="-" onClick="displaynum(subbtn.value)">
+            <button class="numcolor" onClick="adicionar_parametro(4)">4</button>  
+            <button class="numcolor" onClick="adicionar_parametro(5)">5</button>  
+            <button class="numcolor" onClick="adicionar_parametro(6)">6</button>  
+            <button class="opcolor" onClick="adicionar_parametro('-')">-</button><br />  
+
+            <button class="numcolor" onClick="adicionar_parametro(1)">1</button>  
+            <button class="numcolor" onClick="adicionar_parametro(2)">2</button>  
+            <button class="numcolor" onClick="adicionar_parametro(3)">3</button>  
+            <button class="opcolor" onClick="adicionar_parametro('+')">+</button><br />  
+
+            <button class="btnzero" onClick="adicionar_parametro(0)">0</button>  
+            <button class="numcolor" onClick="adicionar_parametro(',')">,</button>  
+            <button class="opcolor" onClick="calcular()">=</button>  
             <br />
         </div>
-
-        <div>
-            <input type="button" class="numcolor" name="btn1" value="1" onClick="displaynum(btn1.value)">
-            <input type="button" class="numcolor" name="btn2" value="2" onClick="displaynum(btn2.value)">
-            <input type="button" class="numcolor" name="btn3" value="3" onClick="displaynum(btn3.value)">
-            <input type="button" class="opcolor" name="addbtn" value="+" onClick="displaynum(addbtn.value)">
-            <br />
-        </div>
-
-        <div>
-            <input type="button" class="btnzero" name="btn0" value="0" onClick="displaynum(btn0.value)">
-            <input type="button" class="numcolor" name="btnvir" value="," onClick="displaynum(btnvir.value)">
-            <input type="button" class="opcolor" name="btnequal" value="=" onClick="text1.value=eval(text1.value)">
-            <br />
-        </div>
-      </form>
     </div>
   </body>
   <script src="script.js"></script>

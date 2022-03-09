@@ -7,7 +7,7 @@ body {
     align-items: center;
 }
 
-form {
+.calculadora {
     border: 1px solid black;
     border-radius: 4px;
     margin: auto;
@@ -15,8 +15,8 @@ form {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 300px;
-    width: 150px;
+    height: 700px;
+    width: 300px;
     background-color: black;
 }
 
@@ -25,14 +25,18 @@ form {
     background-color: transparent;
     text-align: end;
     color:#fff;
-    margin-right: 30px;
+    margin-right: 90px;
+    width: 100%;
+    font-size: 26px;
 }
 
 .textcolor {
     border: none;
     border-radius: 50px;
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
+    margin-left: 5px;
+    font-size: 26px;
 }
 
 .opcolor {
@@ -40,9 +44,11 @@ form {
     border-radius: 50px;
     background-color:orange;
     color: #fff;
-    width: 30px;
-    height: 30px;
-    margin-bottom: 5px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    font-size: 26px;
 }
 
 .numcolor {
@@ -50,8 +56,10 @@ form {
     border-radius: 50px;
     background-color: #333;
     color:#fff;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    font-size: 26px;
 }
 
 
@@ -60,7 +68,9 @@ form {
     border-radius: 50px;
     background-color: #333;
     color:#fff;
-    width: 70px;
-    padding-right: 35px;
-    height: 30px;
+    width: 125px;
+    padding-right: 70px;
+    height: 60px;
+    margin-left: 10px;
+    font-size: 26px;
 }
