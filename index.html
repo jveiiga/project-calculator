@@ -4,42 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="" href="script.js" />
     <title>Calculadora IPhone</title>
   </head>
   <body>
     <div class="calculadora">
-        <input class="result-color" type="text" name="tela" id="display-da-tela" disabled><br />
-        <div>
-            <button class="textcolor" onClick="botao_AC()">AC</button>  
-            <button class="textcolor" onClick="adicionar_parametro('+/-')">+/-</button>  
-            <button class="textcolor" onClick="porcentagem()">%</button>  
-            <button class="opcolor" onClick="adicionar_parametro('/')">/</button><br />
-       
-
-            <button class="numcolor" onClick="adicionar_parametro(7)">7</button>  
-            <button class="numcolor" onClick="adicionar_parametro(8)">8</button>  
-            <button class="numcolor" onClick="adicionar_parametro(9)">9</button>  
-            <button class="opcolor" onClick="adicionar_parametro('*')">*</button><br />  
-
-            <button class="numcolor" onClick="adicionar_parametro(4)">4</button>  
-            <button class="numcolor" onClick="adicionar_parametro(5)">5</button>  
-            <button class="numcolor" onClick="adicionar_parametro(6)">6</button>  
-            <button class="opcolor" onClick="adicionar_parametro('-')">-</button><br />  
-
-            <button class="numcolor" onClick="adicionar_parametro(1)">1</button>  
-            <button class="numcolor" onClick="adicionar_parametro(2)">2</button>  
-            <button class="numcolor" onClick="adicionar_parametro(3)">3</button>  
-            <button class="opcolor" onClick="adicionar_parametro('+')">+</button><br />  
-
-            <button class="btnzero" onClick="adicionar_parametro(0)">0</button>  
-            <button class="numcolor" onClick="adicionar_parametro(',')">,</button>  
-            <button class="opcolor" onClick="calcular()">=</button>  
-            <br />
+      <div><input class="result-color" type="text" name="tela" id="display-da-tela" disabled><br /></div>
+        <div class="container-calculadora-cientifica" >
+          <div class="container-buttons" >
+              <div>
+                <button class="textcolor" onClick="botao_AC()">c</button>
+                <button class="textcolor" onClick="adicionar_parametro('+/-')">+/-</button>
+                <button class="textcolor" onClick="porcentagem()">%</button>
+                <button class="opcolor" onClick="adicionar_parametro('/')">/</button><br />
+              </div>
+              <div>
+                <button class="numcolor" onClick="adicionar_parametro(7)">7</button>
+                <button class="numcolor" onClick="adicionar_parametro(8)">8</button>
+                <button class="numcolor" onClick="adicionar_parametro(9)">9</button>
+                <button class="opcolor" onClick="adicionar_parametro('*')">*</button><br />
+              </div>
+              <div>
+                <button class="numcolor" onClick="adicionar_parametro(4)">4</button>
+                <button class="numcolor" onClick="adicionar_parametro(5)">5</button>
+                <button class="numcolor" onClick="adicionar_parametro(6)">6</button>
+                <button class="opcolor" onClick="adicionar_parametro('-')">-</button><br />
+              </div>
+              <div>
+                <button class="numcolor" onClick="adicionar_parametro(1)">1</button>
+                <button class="numcolor" onClick="adicionar_parametro(2)">2</button>
+                <button class="numcolor" onClick="adicionar_parametro(3)">3</button>
+                <button class="opcolor" onClick="adicionar_parametro('+')">+</button><br />
+              </div>
+              <div>
+                <button class="btnzero" onClick="adicionar_parametro(0)">0</button>
+                <button class="numcolor" onClick="adicionar_parametro(',')">,</button>
+                <button class="opcolor" onClick="calcular()">=</button>
+                <br />
+              </div>
+          </div>
+          <div class="cientifica">
+            cientifica
+          </div>
         </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 
 </html>
