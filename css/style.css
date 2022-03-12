@@ -8,6 +8,11 @@ body {
   /* align-items: center; */
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .calculadora {
   border: 1px solid black;
   border-radius: 4px;
@@ -27,8 +32,17 @@ body {
   text-align: end;
   color: #fff;
   margin-right: 90px;
-  width: 100%;
+  width: 315px;
   font-size: 26px;
+}
+
+.container-buttons {
+  width: 270px;
+}
+
+.container-buttom {
+  display: flex;
+  justify-content: space-between;
 }
 
 .textcolor {
@@ -36,7 +50,6 @@ body {
   border-radius: 50px;
   height: 60px;
   width: 60px;
-  margin-left: 5px;
   font-size: 26px;
 }
 
@@ -48,7 +61,6 @@ body {
   width: 60px;
   height: 60px;
   margin-bottom: 15px;
-  margin-left: 5px;
   font-size: 26px;
 }
 
@@ -59,7 +71,6 @@ body {
   color: #fff;
   width: 60px;
   height: 60px;
-  margin-left: 5px;
   font-size: 26px;
 }
 
@@ -71,19 +82,22 @@ body {
   width: 125px;
   padding-right: 70px;
   height: 60px;
-  margin-left: 10px;
   font-size: 26px;
 }
 
-@media (min-width: 800px) and (max-width: 1900px) {
+.cientifica {
+  display: none;
+}
+
+@media (min-width: 800px) and (max-width: 1990px) {
   .calculadora {
     box-sizing: border-box;
-    width: 916px;
-    height: 425px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    width: 814px;
+    height: 425px;
   }
 
   .container-calculadora-cientifica {
@@ -93,20 +107,54 @@ body {
 
   .result-color {
     font-size: 30px;
-    margin-right: 35px;
+    width: 771px;
   }
 
   .container-buttons {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    width: 313px;
+    padding-right: 10px;
+  }
+
+  .container-buttom {
+    display: flex;
+    /* align-items: start; */
+    justify-content: space-between;
+  }
+
+  .textcolor {
+    width: 75px;
+  }
+
+  .opcolor {
+    width: 75px;
+  }
+
+  .numcolorci {
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(36, 35, 35);
+    color: #fff;
+    width: 75px;
+    height: 60px;
+    font-size: 26px;
+  }
+
+  .btnzero {
+    width: 155px;
   }
 
   .cientifica {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    padding-left: 10px;
     color: #fff;
-    width: 635px;
+  }
+
+  .cientifica div {
+    margin-bottom: 15px;
   }
 }

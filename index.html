@@ -10,42 +10,80 @@
   </head>
   <body>
     <div class="calculadora">
-      <div><input class="result-color" type="text" name="tela" id="display-da-tela" disabled><br /></div>
+      <div><input class="result-color" type="text" name="tela" id="display-da-tela" disabled></div>
         <div class="container-calculadora-cientifica" >
           <div class="container-buttons" >
-              <div>
-                <button class="textcolor" onClick="botao_AC()">c</button>
+              <div class="container-buttom">
+                <button class="textcolor" onClick="botao_AC()">AC</button>
                 <button class="textcolor" onClick="adicionar_parametro('+/-')">+/-</button>
                 <button class="textcolor" onClick="porcentagem()">%</button>
-                <button class="opcolor" onClick="adicionar_parametro('/')">/</button><br />
+                <button class="opcolor" onClick="adicionar_parametro('/')">/</button>
               </div>
-              <div>
+              <div class="container-buttom">
                 <button class="numcolor" onClick="adicionar_parametro(7)">7</button>
                 <button class="numcolor" onClick="adicionar_parametro(8)">8</button>
                 <button class="numcolor" onClick="adicionar_parametro(9)">9</button>
-                <button class="opcolor" onClick="adicionar_parametro('*')">*</button><br />
+                <button class="opcolor" onClick="adicionar_parametro('*')">*</button>
               </div>
-              <div>
+              <div class="container-buttom">
                 <button class="numcolor" onClick="adicionar_parametro(4)">4</button>
                 <button class="numcolor" onClick="adicionar_parametro(5)">5</button>
                 <button class="numcolor" onClick="adicionar_parametro(6)">6</button>
-                <button class="opcolor" onClick="adicionar_parametro('-')">-</button><br />
+                <button class="opcolor" onClick="adicionar_parametro('-')">-</button>
               </div>
-              <div>
+              <div class="container-buttom">
                 <button class="numcolor" onClick="adicionar_parametro(1)">1</button>
                 <button class="numcolor" onClick="adicionar_parametro(2)">2</button>
                 <button class="numcolor" onClick="adicionar_parametro(3)">3</button>
-                <button class="opcolor" onClick="adicionar_parametro('+')">+</button><br />
+                <button class="opcolor" onClick="adicionar_parametro('+')">+</button>
               </div>
-              <div>
+              <div class="container-buttom">
                 <button class="btnzero" onClick="adicionar_parametro(0)">0</button>
                 <button class="numcolor" onClick="adicionar_parametro(',')">,</button>
                 <button class="opcolor" onClick="calcular()">=</button>
-                <br />
               </div>
           </div>
           <div class="cientifica">
-            cientifica
+            <div>
+              <button class="numcolorci" onClick="adicionar_parametro()">(</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">)</button>
+              <button class="numcolorci" onClick="adicionar_parametro(mc)">mc</button>
+              <button class="numcolorci" onClick="adicionar_parametro('mc+')">m+</button>
+              <button class="numcolorci" onClick="adicionar_parametro('m-')">m-</button>
+              <button class="numcolorci" onClick="adicionar_parametro(mr)">mr</button>
+            </div>
+            <div>
+              <button class="numcolorci" onClick="adicionar_parametro()">2nd</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">x2</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">x3</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">xy</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">ex</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">10⨯</button>
+            </div>
+            <div>
+              <button class="numcolorci" onClick="adicionar_parametro()">1/x</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">2√x</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">∛x</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">y√x</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">In</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">log10</button>
+            </div>
+            <div>
+              <button class="numcolorci" onClick="adicionar_parametro()">x!</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">sin</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">cos</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">tan</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">e</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">EE</button>
+            </div>
+            <div>
+              <button class="numcolorci" onClick="adicionar_parametro()">Rad</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">sinh</button>
+              <button class="numcolorci" onClick="adicionar_parametro(mc)">cosh</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">tanh</button>
+              <button class="numcolorci" onClick="adicionar_parametro(pi)">𝛑</button>
+              <button class="numcolorci" onClick="adicionar_parametro()">Rand</button>
+            </div>
           </div>
         </div>
     </div>
