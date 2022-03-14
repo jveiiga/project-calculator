@@ -132,6 +132,10 @@ a {
     width: 75px;
   }
 
+  .numcolor {
+    width: 75px;
+  }
+
   .numcolorci {
     border: none;
     border-radius: 50px;
