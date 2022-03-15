@@ -89,7 +89,7 @@ a {
   display: none;
 }
 
-@media (min-width: 800px) and (max-width: 1990px) {
+@media (min-width: 667px) and (max-width: 736px) {
   .calculadora {
     box-sizing: border-box;
     display: flex;
